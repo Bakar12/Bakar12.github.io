@@ -1,0 +1,83 @@
+/* Container for the modules */
+#modules {
+    padding: 2rem;
+    background-color: #001f00; /* Dark green background */
+    color: #ffffff; /* White text color */
+}
+
+.modules__heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.modules__heading h5 {
+    color: #b3ffcc;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+    animation: slideIn 1s ease-out forwards;
+}
+
+.modules__heading h2 {
+    color: #00ff99;
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    animation: slideIn 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+/* Styling for the module articles */
+.modules__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem;
+}
+
+.module {
+    background-color: #003300; /* Dark green for the card */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.module:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Module title */
+.module h3 {
+    color: #00ff99;
+    margin-bottom: 0.5rem;
+}
+
+/* Module description */
+.module p {
+    color: #b3ffcc;
+}
+
+/* Animations */
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
