@@ -6,20 +6,6 @@ function Portfolio() {
 
     const projects = [
         {
-            title: 'Algorithms Practice',
-            platform: 'AlgoExpert',
-            languages: ['Python'],
-            link: 'https://github.com/Bakar12/Algorithms-Practice/tree/master',
-            type: 'Python Project',
-        },
-        {
-            title: 'Data Structure Practice',
-            platform: 'AlgoExpert',
-            languages: ['Python'],
-            link: 'https://github.com/Bakar12/Data-Structure',
-            type: 'Python Project',
-        },
-        {
             title: 'Tech Repair Service',
             platform: 'Web Development',
             languages: ['HTML', 'CSS', 'JavaScript', 'Python', 'Web Development'],
